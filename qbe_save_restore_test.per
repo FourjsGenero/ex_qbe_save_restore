@@ -1,0 +1,24 @@
+LAYOUT (TEXT="QBE Save/Restore Test")
+GRID
+{
+Edit          [f01        ]
+ButtonEdit    [f02        ]
+DateEdit      [f03        ]
+SpinEdit      [f04        ]
+TextEdit      [f05        ]
+              [           ]
+CheckBox      [f06]
+ComboBox      [f07        ]
+RadioGroup    [f08        ]
+}
+END
+END
+ATTRIBUTES
+EDIT          f01 = formonly.field1;
+BUTTONEDIT    f02 = formonly.field2;
+DATEEDIT      f03 = formonly.field3 TYPE DATE;
+SPINEDIT      f04 = formonly.field4 TYPE INTEGER;
+TEXTEDIT      f05 = formonly.field5;
+CHECKBOX      f06 = formonly.field6;
+COMBOBOX      f07 = formonly.field7, ITEMS=(("Y","Yes"),("N","No"));
+RADIOGROUP    f08 = formonly.field8, ITEMS=(("Y","Yes"),("N","No"));
